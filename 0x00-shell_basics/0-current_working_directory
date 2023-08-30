@@ -1,3 +1,2 @@
 #!/bin/bash
-print_Working_Directory=$(pwd)
-echo "$print_Working_Directory"
+echo "$(pwd)"
