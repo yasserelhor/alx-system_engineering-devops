@@ -1,5 +1,3 @@
 #!/bin/bash
-# optaining the outupt of the 'pwd' command and saving it in a variable.
 print_Working_Directory=$(pwd)
-# priting the output of the command
 echo "$print_Working_Directory"
