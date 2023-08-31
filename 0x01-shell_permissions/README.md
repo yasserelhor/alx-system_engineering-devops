@@ -33,3 +33,4 @@ Directories: This script adds execute permission to all subdirectories of the cu
 More directories: this script creates a directory called my_dir with permissions 751 in the working directory.
 
 
+Change group: this script changes the group owner to school for the file hello
