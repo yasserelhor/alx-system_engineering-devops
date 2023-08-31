@@ -24,4 +24,4 @@ Other users: all the permissions
 John Doe: this script sets the mode of the file hello to -rwxr-x-wx
 
 
-
+Look in the mirror: this script sets the mode of the file hello the same as olleh’s mode.
