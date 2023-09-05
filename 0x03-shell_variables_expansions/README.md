@@ -13,5 +13,5 @@
 4. global_variables: this script lists environment variables.
 
 
-
+5. local_variables: this script lists all local variables and environment variables, and functions.
 
