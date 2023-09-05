@@ -15,3 +15,6 @@
 
 5. local_variables: this script lists all local variables and environment variables, and functions.
 
+
+6.  Local variable: this script creates a new local variable.
+
