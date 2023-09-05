@@ -41,3 +41,6 @@
 
 
 14. Decimal to Hexadecimal: this script converts a number from base 10 to base 16.
+
+
+15. 101-rot13: encodes and decodes text using the rot13 encryption. Assume ASCII.
