@@ -47,3 +47,6 @@
 
 
 16. 102-odd: this script prints every other line from the input, starting with the first line.
+
+
+17. 103-water_and_stir: this script adds the two numbers stored in the environment variables WATER and STIR and prints the result.
