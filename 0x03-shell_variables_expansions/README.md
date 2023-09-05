@@ -26,3 +26,6 @@
 
 
 9. Divide and rule: this script prints the result of POWER divided by DIVIDE, followed by a new line.
+
+
+10. love_exponent_breath: this script displays the result of BREATH to the power LOVE
