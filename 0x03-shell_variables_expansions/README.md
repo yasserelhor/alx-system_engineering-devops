@@ -38,3 +38,6 @@
 
 
 13. Floats: this script  prints a number with two decimal places, followed by a new line.
+
+
+14. Decimal to Hexadecimal: this script converts a number from base 10 to base 16.
