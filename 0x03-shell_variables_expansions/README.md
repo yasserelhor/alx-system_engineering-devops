@@ -31,4 +31,7 @@
 10. love_exponent_breath: this script displays the result of BREATH to the power LOVE
 
 
-11. -binary_to_decimal:this script convertes a number from base 2 to base 10.
+11. -binary_to_decimal:this script convertes a number from base 2 to base 10
+
+
+12. Combination: this script prints all possible combinations of two letters, except oo.
