@@ -10,7 +10,7 @@
 3. -paths: this script counts the number of directories in the PATH
 
 
-
+4. global_variables: this script lists environment variables.
 
 
 
