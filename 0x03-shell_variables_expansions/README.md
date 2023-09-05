@@ -29,3 +29,6 @@
 
 
 10. love_exponent_breath: this script displays the result of BREATH to the power LOVE
+
+
+11. -binary_to_decimal:this script convertes a number from base 2 to base 10.
