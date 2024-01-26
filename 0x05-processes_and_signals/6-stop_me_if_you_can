@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-#fia joo3
-pkill -f 4-to_infinity_and_beyond
+# kills the process part 2
+
+pkill -f 4-to_infinity_and_beyond 
