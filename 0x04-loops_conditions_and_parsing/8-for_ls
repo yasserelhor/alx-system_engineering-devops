@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# displays the content of the current working directory.
-
+# Bash script that does some thing :) ^-^
 for i in *
 do
     echo "$i" | cut -d'-' -f2
