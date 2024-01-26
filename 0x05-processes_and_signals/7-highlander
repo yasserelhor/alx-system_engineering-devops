@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # will do the thing you know what i mean im the king of all time im the shark ^-^
-trap 'echo I am invicible!!!' SIGTERM
-while :
+while true
 do
     echo "To infinity and beyond"
     sleep 2
+    trap 'echo "I am invincible!!!"' SIGTERM
 done
