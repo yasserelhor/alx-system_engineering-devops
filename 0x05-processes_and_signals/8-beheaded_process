@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-pskill -f -SIGKILL 7-highlander
+#you know the deal :)
+pkill -f -SIGKILL 7-highlander
