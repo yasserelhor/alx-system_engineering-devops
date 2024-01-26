@@ -2,7 +2,7 @@
 #Bash script that displays To infinity and beyond indefinitely.
 
 inf="To infinity and beyond"
-while ((1 > 0))
+while :
 do
     echo $inf
     sleep 2
