@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #Bash script that displays To infinity and beyond indefinitely.
-
 inf="To infinity and beyond"
 while :
 do
