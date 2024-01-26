@@ -4,7 +4,8 @@
 #include <stdio.h>
 
 /**
- * infinite_while - Run an infinite loop with a 1-second sleep in each iteration.
+ * infinite_while - Run an infinite loop with a 1-second
+ * sleep in each iteration.
  *
  * This function is typically used to create a long-running process.
  *
