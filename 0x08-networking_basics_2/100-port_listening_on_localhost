@@ -2,5 +2,3 @@
 #lisening veery pasiantely to port 98 using telnet ^-^
 
 nc -l localhost 98
-
-fia joo3 
