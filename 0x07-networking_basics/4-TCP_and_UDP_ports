@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#filters TCP And UDP with "LISTENING"
+netstat -lp
