@@ -1,25 +1,31 @@
 #!/usr/bin/env bash
-# This script configures your Nginx server to have a custom 404 page that contains the string "Ceci n'est pas une page."
-
-sudo apt -y update
-sudo apt -y install nginx
+# Configure a custom 404 page for Nginx
+sudo apt-get update
+sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-sudo service nginx start
+sudo chmod -R 755 /var/www
+echo 'Hello World' | sudo tee /var/www/html/index.html > /dev/null
 
-echo 'Hello World!' | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
-echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html > /dev/null
-
-conf_new="server {
-    listen 80;
+new_config="server {
+    listen 80 default_server;
     listen [::]:80 default_server;
     root /var/www/html;
-    index index.html;
+    index index.html index.htm index.nginx-debian.html;
+    server_name _;
+    location / {
+        try_files \$uri \$uri/ =404;
+    }
     error_page 404 /404.html;
-    location = /404.html {
-        root /var/www/html;
+    location /404.html {
         internal;
     }
 }"
 
-echo "$conf_new" | sudo tee /etc/nginx/sites-available/default > /dev/null
-sudo service nginx restart
+echo "$new_config" | sudo tee /etc/nginx/sites-available/default > /dev/null
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html > /dev/null
+sudo systemctl reload nginx
+if sudo systemctl is-active --quiet nginx; then
+    sudo systemctl restart nginx
+else
+    sudo systemctl start nginx
+fi
