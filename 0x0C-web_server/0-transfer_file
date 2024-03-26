@@ -1,4 +1,4 @@
-#!/usr/bin/env/ bash
+#!/usr/bin/env bash
 # this script copies a file from the client to the server
 if [ $# -lt 3 ];
 then
