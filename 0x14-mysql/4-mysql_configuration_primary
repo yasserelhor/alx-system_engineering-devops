@@ -5,4 +5,3 @@ datadir         = /var/lib/mysql
 log-error       = /var/log/mysql/error.log
 log_bin = /var/log/mysql/mysql-bin.log
 server-id = 1
-bind-address    = 127.0.0.1
