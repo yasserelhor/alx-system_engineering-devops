@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-"""Module for task 0"""
+""" script to obtain subscribers
+    count from a subreddit
+"""
+from requests import get
 
 
 def number_of_subscribers(subreddit):
-    """Reddit Api"""
-    import requests
-
-    sub_info = requests.get("https://www.reddit.com/r/{}/about.json"
-                            .format(subreddit),
-                            headers={"User-Agent": "My-User-Agent"},
-                            allow_redirects=False)
-    if sub_info.status_code >= 300:
-        return 0
-
-    return sub_info.json().get("data").get("subscribers")
+    """ function to get subscriber count"""
+    if subreddit and type(subreddit) is str:
+        subscribers = 0
+        url = 'https://reddit.com/r/{}/about.json'.format(subreddit)
+        headers = {'user-agent': 'my-app/0.0.1'}
+        req = get(url, headers=headers)
+        if req.status_code == 200:
+            data = req.json()
+            subscribers = data.get('data', {}).get('subscribers', 0)
+        return subscribers
